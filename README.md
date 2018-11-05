@@ -1,4 +1,4 @@
-Zephry Development Environment
+Zephyr Development Environment
 ==============================
 
 A Ubuntu-based docker image suitable for [Zephyr RTOS](https://github.com/zephyrproject-rtos/zephyr)

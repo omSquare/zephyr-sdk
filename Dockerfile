@@ -19,7 +19,7 @@ ENV LANG en_US.UTF-8
 COPY gitignore_global /root/.gitignore_global
 RUN git config --global core.excludesfile '~/.gitignore_global'
 
-RUN wget https://github.com/zephyrproject-rtos/meta-zephyr-sdk/releases/download/0.9.3/zephyr-sdk-0.9.3-setup.run
+RUN wget -nv https://github.com/zephyrproject-rtos/meta-zephyr-sdk/releases/download/0.9.3/zephyr-sdk-0.9.3-setup.run
 RUN sh zephyr-sdk-0.9.3-setup.run
 
 WORKDIR /zephyr

@@ -5,3 +5,7 @@ services:
 
 script:
   - docker build -t omsquare/zephyr-sdk .
+
+deploy:
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - docker push omsquare/zephyr-sdk
